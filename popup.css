@@ -1,0 +1,149 @@
+/* Updated popup.css */
+
+body {
+  margin: 0;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #000000; /* Background Black */
+  color: #FFFFFF; /* White text for better contrast */
+  background: radial-gradient(circle, #1a002b, #000000); /* Radial gradient for galaxy effect */
+}
+
+.container {
+  padding: 20px;
+  width: 450px; /* Increased width */
+}
+
+h1 {
+  text-align: center;
+  color: #AA00FF; /* Accent Purple */
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+.tab-button {
+  flex: 1;
+  padding: 12px;
+  background-color: #300063; /* Primary Purple (Dark) */
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.tab-button.active {
+  background-color: #5C007A; /* Primary Purple (Medium) */
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+#analyze-button, #ai-button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  background-color: #5C007A; /* Primary Purple (Medium) */
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+#analyze-button:hover, #ai-button:hover {
+  background-color: #8C4CCF; /* Primary Purple (Light) */
+}
+
+#results {
+  max-height: 600px; /* Increased max height */
+  overflow-y: auto;
+}
+
+.result-section {
+  background-color: #1A0033; /* Dark background for sections */
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+
+}
+
+.result-section h2 {
+  color: #AA00FF; /* Accent Purple */
+  margin-top: 0;
+  font-size: 20px;
+  margin-bottom: 10px;
+
+}
+
+.result-section p, .result-section ul, .result-section pre {
+  color: #FFFFFF;
+}
+
+.result-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.result-section li {
+  margin-bottom: 5px;
+}
+
+.result-section pre {
+  background-color: #300063; /* Primary Purple (Dark) */
+  padding: 10px;
+  border-radius: 5px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.result-section p strong {
+  font-weight: 500;
+}
+
+.result-section p {
+  margin: 8px 0;
+  line-height: 1.5;
+
+}
+.result-section ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.result-section li {
+  margin-bottom: 5px;
+}
+
+.result-section i {
+  margin-right: 8px;
+}
+
+/* Add color definitions */
+.status-good {
+  color: #4CAF50; /* Green */
+}
+
+.status-improvement {
+  color: #FF9800; /* Orange */
+}
+
+.status-attention {
+  color: #F44336; /* Red */
+}
+
+.status-info {
+  color: #2196F3; /* Blue */
+}
+
+.status-note {
+  color: #9E9E9E; /* Grey */
+}

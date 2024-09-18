@@ -1,0 +1,45 @@
+<!-- popup.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>SEOlytics</title>
+    <link rel="stylesheet" href="popup.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/466ecd96e0.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>SEOlytics</h1>
+      <div class="tabs">
+        <!-- Main Tabs -->
+        <button class="tab-button active" data-tab="analysis">Analysis</button>
+        <button class="tab-button" data-tab="options">Options</button>
+      </div>
+      
+      <!-- Analysis Tab Content -->
+      <div class="tab-content active" id="analysis">
+        <button id="analyze-button">Analyze Page</button>
+        <button id="ai-button">AI-Powered Analysis</button>
+        <!-- Dynamic Sub-Tabs for Analysis Results -->
+        <div id="sub-tabs" class="sub-tabs"></div>
+        <div id="results" class="results"></div>
+      </div>
+
+      <!-- Options Tab Content -->
+      <div class="tab-content" id="options">
+        <h2>Options</h2>
+        <form id="options-form">
+          <label><input type="checkbox" name="showTitle" checked> Show Page Title</label><br>
+          <!-- Add more options as needed -->
+          <button type="submit">Save Options</button>
+        </form>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
