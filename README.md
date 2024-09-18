@@ -28,7 +28,7 @@ The **Seolytics.ai Chrome Extension** is a powerful tool for on-page SEO analysi
 
 ## Screenshots
 
-![Seolytics.ai Extension Screenshot](path_to_screenshot)
+![Seolytics.ai Extension Screenshot](images/popupui.png)
 
 ## Contributing
 
